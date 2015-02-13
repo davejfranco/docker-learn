@@ -2,5 +2,5 @@
 FROM ubuntu:14.04
 MAINTAINER Dave Franco "davefranco1987@gmail.com"
 RUN apt-get update
-RUN apt-get install wget curl nginx git
+RUN apt-get install -y wget curl nginx git
 EXPOSE 80
