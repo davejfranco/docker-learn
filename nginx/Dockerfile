@@ -19,4 +19,3 @@ ADD default /etc/nginx/site-available/default
 
 EXPOSE 80
 
-CMD["nginx"]
