@@ -11,11 +11,9 @@ RUN apt-get -qq update && apt-get -qqy upgrade
 #INSTALL NGINX AND NECESSARY PACKAGES
 RUN apt-get install -y wget curl nginx git nano
 
-RUN mkdir -p /var/www/html && chown -R www-data:www-data /var/www
-
-
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
-
+VOLUME ["/www"]
+WORKDIR /www
 
 EXPOSE 80
 
+CMD ["nginx"]
