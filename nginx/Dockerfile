@@ -17,8 +17,5 @@ RUN mkdir -p /var/www/html && chown -R www-data:www-data /var/www
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 
-
-ADD default /etc/nginx/site-available/default
-
 EXPOSE 80
 
