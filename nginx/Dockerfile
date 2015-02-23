@@ -14,8 +14,6 @@ RUN apt-get install -y wget curl nginx git nano
 VOLUME ["/www"]
 WORKDIR /www
 
-RUN git clone 
-
 EXPOSE 80
 
 CMD ["nginx"]
